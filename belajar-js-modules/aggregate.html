@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Aggregate</title>
+</head>
+<body>
+<script type="module">
+    // Mengimpor beberapa ekspor dari file aggregate.js
+    import { Orang, goodMorning, goodNight, jumlah } from "./scripts/aggregate.js";
+
+    // Membuat instance baru dari kelas Orang
+    const orang = new Orang("Eko");
+    // Memanggil metode sapaHalo pada instance orang
+    orang.sapaHalo("Joko");
+
+    // Memanggil fungsi goodMorning
+    goodMorning("Eko");
+    // Memanggil fungsi goodNight
+    goodNight("Eko");
+
+    // Menampilkan hasil fungsi jumlah di konsol
+    console.info(jumlah(10, 10));
+</script>
+</body>
+</html>
